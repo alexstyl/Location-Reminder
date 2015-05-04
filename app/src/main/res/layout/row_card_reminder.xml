@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/card_edge_to_card"
+    android:paddingEnd="@dimen/card_edge_to_card"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_width="wrap_content"
+        android:id="@+id/card_options"
+        android:minHeight="24dp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_navigation_more_horiz"
+        android:background="@drawable/selectable_drawable"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        style="@style/CardStyle"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:paddingTop="@dimen/card_content_padding"
+            android:paddingRight="@dimen/card_content_padding"
+            android:paddingBottom="@dimen/card_content_padding"
+            android:paddingLeft="@dimen/card_content_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/note"
+                tools:text="Get coffee at Starbucks"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textAppearance="@style/CardText.Title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding_small"
+                android:id="@+id/place"
+                tools:text="\@Starbucks"
+                android:ellipsize="end"
+                android:textAppearance="@style/CardText.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textAppearance="@style/CardText.Subtitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/distance"
+                android:singleLine="true"
+                tools:text="3m away"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

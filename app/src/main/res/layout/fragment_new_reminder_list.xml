@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/note"
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_example"
+        android:layout_toLeftOf="@+id/pinpoint_btn"
+        android:layout_toStartOf="@+id/pinpoint_btn" />
+
+    <TextView
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:id="@+id/place_address"
+        android:layout_below="@id/note"
+        android:layout_width="match_parent"
+        android:hint="@string/example_address"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_toLeftOf="@+id/pinpoint_btn"
+        android:layout_toStartOf="@+id/pinpoint_btn" />
+
+    <ImageButton
+        style="@style/Button.Transparent"
+        android:layout_below="@id/note"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_maps_map"
+        android:layout_width="wrap_content"
+        android:id="@+id/pinpoint_btn"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:id="@+id/place_name"
+        android:hint="@string/place_example"
+        android:layout_below="@id/place_address"
+        android:layout_toLeftOf="@id/pinpoint_btn"
+        android:layout_height="wrap_content" />
+
+    <!-- Actions -->
+
+    <TextView
+        android:layout_marginTop="@dimen/padding_big"
+        android:layout_width="match_parent"
+        android:id="@+id/actions"
+        android:layout_below="@id/place_name"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:text="@string/actions"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/actions"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:id="@+id/unsupported_actions_label"
+            android:text="@string/editing_actions_unsupported" />
+
+        <RelativeLayout
+            android:id="@+id/available_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- TODO Create custom view for a single Item -->
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/action_dnd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/mute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/check_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/notify_radius"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_below="@id/action_dnd"
+                android:id="@+id/radius_title"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_below="@id/radius_title"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/radius_text"
+                    android:gravity="center"
+                    android:layout_width="48dp"
+                    android:text="@string/radius_in_m"
+                    android:layout_height="48dp" />
+
+                <SeekBar
+                    android:id="@+id/radius_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_bar"
+        android:orientation="horizontal"
+        style="?attr/buttonBarStyle"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?attr/buttonBarButtonStyle"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/btn_cancel"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="?attr/buttonBarButtonStyle"
+            android:text="@string/save"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/btn_save"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

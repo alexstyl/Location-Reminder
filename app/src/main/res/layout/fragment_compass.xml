@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <TextView
+        tools:text="Tesco"
+        android:layout_marginTop="@dimen/padding_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:id="@+id/target_name"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:singleLine="true"
+        android:layout_below="@id/target_name"
+        android:id="@+id/distance"
+        tools:text="500 meters away"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_below="@id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                style="@style/Base.Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.AppCompat.Inverse"
+                android:text="@string/waiting_for_location"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.alexstyl.locationreminder.CompassView
+            tools:visibility="visible"
+            android:visibility="invisible"
+            android:id="@+id/compass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

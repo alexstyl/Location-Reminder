@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+
+    <style name="CardStyle">
+        <item name="android:foreground">@drawable/selectable_drawable</item>
+    </style>
+
+    <style name="CardText">
+        <item name="android:textColor">@color/card_text</item>
+    </style>
+
+    <style name="CardText.Title" parent="CardText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CardText.Subtitle" parent="CardText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="AppTheme.DialogWhenLarge" parent="Base.Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+
+        <!-- Panel attributes -->
+        <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
+    </style>
+
+    <style name="Button.Transparent" parent="Button">
+        <item name="android:background">@drawable/selectable_drawable</item>
+    </style>
+
+    <style name="Button"></style>
+
+    <style name="AppTheme.MapSelection" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
+</resources>

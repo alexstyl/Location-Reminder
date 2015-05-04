@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Υπενθυμίσεις</string>
+
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="service_not_available">Η υπηρεσία δεν είναι διαθέσιμη</string>
+    <string name="invalid_lat_long_used">invalid_lat_long_used</string>
+    <string name="no_address_found">Η διεύθυνση δεν βρέθηκε</string>
+    <string name="address_found">Η διεύθυνση βρέθηκε</string>
+    <string name="note_example">Τι θα θέλατε να ειδοποιηθείτε; πχ. Αγόρασε γάλα</string>
+    <string name="place_example">Προστέστε ένα όνομα για την τοποθεσία (π.χ. Σκλαβενίτης)</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="reminder_created">Η υπενθύμιση αποθηκεύθηκε</string>
+    <string name="new_reminder">Νέα υπενθύμιση</string>
+    <string name="distance_from_target">Remind me when I am %d away from the location</string>
+    <string name="actions">Eπιλογές</string>
+    <string name="mute">Σιωπιλό</string>
+
+
+    <string name="about_message_by">από τον Αλέξανδρο Στυλιανίδη, MSc Human-Computer Interaction</string>
+    <string name="about_message_contact">επικοινωνία στο alexstyl.dev@gmail.com</string>
+
+
+
+    <string name="close">Κλείσιμο</string>
+    <string name="about">Σχετικά</string>
+    <string name="error_no_note">Η σημείωση δεν μπορεί να είναι κενή</string>
+    <string name="x_dintance_away">3m μακριά</string>
+    <string name="order_by_distance">Order by distance</string>
+    <string name="example_address">Διεύθυνση (π.χ. 221b Baker Street)</string>
+    <string name="error_no_address">Η διεύθυνση δεν μπορεί να είναι κενή</string>
+    <string name="card_delete">Ακύρωση υπενθύμησης</string>
+    <string name="reminder_edit">Επεξεργασία</string>
+    <string name="reminder_delete">Διαγραφή</string>
+    <string name="empty_no_reminders">Δεν υπάρχει καποια υπενθύμηση ακόμα.\nΠατήστε το πλήκτρο + για να δημιουργήσετε μια!</string>
+    <string name="select">Επιλογή</string>
+    <string name="reminder_creation_failed">Δεν κατάφερα να δημιουργήσω την υπενθύμηση. Προσπαθήστε ξανά αργότερα</string>
+
+    <string name="distance">%.2f μέτρα μακριά</string>
+    <string name="destination_reached">Φτάσατε στον προορισμό σας!</string>
+    <string name="delete_reminder_title">Διαγραφή υπενθύμησης?</string>
+    <string name="reminder_deleted">Η υπενθύμηση διαγράφθηκε</string>
+    <string name="distance_too_far">Πολύ, πολύ μακριά</string>
+    <string name="reminder_open_compass">Πυξίδα</string>
+    <string name="reminder_updated">Η υπενθύμιση ανανεώθηκε</string>
+    <string name="edit_reminder">Επεξεργασία υπενθύμισης</string>
+    <string name="edit">Επεξεργασία</string>
+    <string name="waiting_for_location">Αναζήτηση τοποθεσίας</string>
+    <string name="near_place">Κοντά στο %s</string>
+    <string name="dnd_enabled">Η συσκευή είναι σε "Σιωπιλό"</string>
+    <string name="editing_actions_unsupported">Λυπούμαστε, αλλά δεν μπορείτε να επεξεραστίτε τις δυνατότητες σε αυτή την έκδοση</string>
+    <string name="notify_radius">Απόσταση υπενθύμισης</string>
+    <string name="radius_in_m">%s μ</string>
+</resources>

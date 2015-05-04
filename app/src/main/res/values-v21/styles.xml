@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="CardStyle">
+        <item name="android:foreground">@drawable/ripple_press</item>
+    </style>
+
+    <style name="Button.Transparent" parent="Button">
+        <item name="android:background">@drawable/ripple_press</item>
+    </style>
+
+</resources>

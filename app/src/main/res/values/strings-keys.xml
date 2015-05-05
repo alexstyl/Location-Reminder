@@ -3,5 +3,5 @@
     <string name="key_sort_order" translatable="false">key_sort_order</string>
     <string name="file_userpreferences" translatable="false">user_prefs</string>
 
-    <string name="MAPS_API_KEY" translatable="false" templateMergeStrategy="preserve">AIzaSyDqkqvvM1Cwt72eMHWmB83KTIQL7JmmJME</string>
+    <string name="MAPS_API_KEY" translatable="false" templateMergeStrategy="preserve">Maps API Key from the Google Console</string>
 </resources>
